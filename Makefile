@@ -4,5 +4,5 @@
 #
 # Samuel Calmday
 # samuel.calmday@bison.howard.edu
-list: main.c
-	gcc -o main main.c
+list: main.c list.c list.h
+		gcc -o list.h list.c main.c -I. -std=c99
